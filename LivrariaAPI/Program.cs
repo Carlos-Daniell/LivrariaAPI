@@ -11,8 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuração para que os metodos contidos na Interface(IAutorInterface), estão implementados na classe service(AutorService)  
 builder.Services.AddScoped<IAutorInterface, AutorService>();
 
+//Configuração da da string de conexão do banco de dados
 builder.Services.AddDbContext<AppDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
