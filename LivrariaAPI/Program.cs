@@ -1,5 +1,5 @@
 using LivrariaAPI.Data;
-using LivrariaAPI.Services.NovaPasta.Autor;
+using LivrariaAPI.Services.Autor;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

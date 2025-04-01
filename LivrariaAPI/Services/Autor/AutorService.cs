@@ -1,4 +1,4 @@
-﻿namespace LivrariaAPI.Services.NovaPasta.Autor {
+﻿namespace LivrariaAPI.Services.Autor {
     public class AutorService : IAutorInterface{
     }
 }
