@@ -7,11 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configuração para que os metodos contidos na Interface(IAutorInterface), estão implementados na classe service(AutorService)  
+// Configuração para declarar que os metodos contidos na Interface(IAutorInterface), estão implementados na classe service(AutorService)  
 builder.Services.AddScoped<IAutorInterface, AutorService>();
 
 //Configuração da da string de conexão do banco de dados
