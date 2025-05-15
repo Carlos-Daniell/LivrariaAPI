@@ -10,7 +10,7 @@ namespace LivrariaAPI.Controllers {
 
         private readonly IAutorInterface _autorInterface;
 
-        //Construtor recebendo a interface e atribuindo a variavel da classe(aprivada apenas leitura), para acessar os metodos.
+        //Construtor recebendo a interface e atribuindo a variavel da classe(privada apenas leitura), para acessar os metodos.
         public AutorController(IAutorInterface autorInterface) {
             _autorInterface = autorInterface;
         }
